@@ -1,0 +1,37 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/submitPreferencesBtnId">
+
+        <LinearLayout
+            android:id="@+id/llQuestionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submitPreferencesBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit survey"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@id/tvSurveyResults"/>
+
+    <TextView
+        android:id="@+id/tvSurveyResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

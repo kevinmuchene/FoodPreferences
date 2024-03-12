@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:text="Food Preferences Survey"/>
+
+
+        <RadioGroup
+            android:id="@+id/surveyTypeGroupId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="12dp"
+            >
+
+            <RadioButton
+                android:id="@+id/foodPreferenceId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Preferences"/>
+
+            <RadioButton
+                android:id="@+id/dietPreferenceId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dietary Habits"/>
+
+
+        </RadioGroup>
+
+    <Button
+        android:id="@+id/submitBtnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+<!--    <Button-->
+<!--        android:id="@+id/dietPreferenceId"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Diet"/>-->
+
+
+</LinearLayout>
