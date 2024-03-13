@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
 
     private lateinit var submitBtn: Button
-    private lateinit var buttonDietaryHabits: Button
     private lateinit var surveyTypeGroup: RadioGroup
 
     private var selectedSurveyTypeId: Int = -1
@@ -20,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main);
 
         submitBtn = findViewById(R.id.submitBtnId)
-//        buttonDietaryHabits = findViewById(R.id.dietPreferenceId)
         surveyTypeGroup = findViewById(R.id.surveyTypeGroupId)
 
         surveyTypeGroup.setOnCheckedChangeListener { group, checkedId ->
@@ -39,8 +37,6 @@ class MainActivity : AppCompatActivity() {
             }
             startActivity(intent)
         }
-
-
 
     }
 
